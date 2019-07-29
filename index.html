@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FOUNDRY</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery-3.3.1.js" />
+    <link rel="stylesheet" type="text/css" href="home.css" />
+
+</head>
+
+<body>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+	$(document).ready(function(e) {
+		$(".photo-galary").children().hover(function(){
+			
+			$(".photo-galary").children().removeClass('show-up');
+			$(this).addClass("show-up");
+		});
+		$(window).on('scroll',function(){
+            $(".header-top").toggleClass("scroll");
+        });
+		
+			$("button.navbar-toggler.navbar-light").click(function(){
+			$(".module-nav").toggleClass("module-nav-slide");	});
+			
+			
+			$(".des").toggleClass("des-trans");
+	
+		
+		$("#wel").hide();
+		$("#hey").addClass("hey");
+		$("#buy-now").hover(function(){
+			$("#buy-now").toggleClass("buy-hover");
+		});
+		$(".col-md-4>img").hover(function(){
+			$(".col-md-4>img").toggleClass("img-trans");
+		});
+		setInterval(function (){
+			$("#hey").toggleClass("hey");
+				$("#hey").slideToggle();
+				
+        $("#wel").fadeToggle();		
+	
+		$("#opa-1 img").toggleClass("img-js");
+		$("#opa-2 img").toggleClass("img-js");
+		$("#opa-3 img").toggleClass("img-js");
+		$("#opa-4 img").toggleClass("img-js");
+		$("#opa-5 img").toggleClass("img-js");
+		$("#opa-6 img").toggleClass("img-js");
+		$(".wel-2").toggleClass("wel-2-show");
+		$("#header-img img").toggleClass("header-img-scale");
+		},3000)		
+
+    });
+</script>
+	<header>
+    	<div class="header-top">
+    	<nav class="top-bar">
+        <div class="container">
+            <p id="logo">FOUNDRY</p>
+            <ul class="module-nav">
+                <li id="home">HOME</li>
+                <li>LANG</li>        	
+                <li>BLOG</li>
+                <li>SHOP</li>
+                <li id="port">\0/PORTFOLIO 
+                    <ul class="nav-lv1">
+                        <li>Adam</li>
+                        <li>Jason</li>
+                        <li>Bucky</li>        	
+                        <li>David</li>
+                     </ul>
+                </li>
+                <li>ELEMENTS</li>
+                <li>PAGES</li>
+                <li >SEARCH</li>
+                <li>CART</li>
+            </ul> 
+            <div id="btn-slide">
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#menu">
+    				<span class="navbar-toggler-icon"></span>
+   			 </button>
+             </div>
+        </div>
+   			
+        </nav>
+        </div>
+        <div id="header-img"><img src="img/papers.co-nx32-concert-rock-blue-music-nature-36-3840x2400-4k-wallpaper.jpg"><div id="wel"><p> Welcome to BaSon Band</br>Let enjoy the best moment with us!</p></div><div id="hey">HEY!</div></div>
+    	</div>
+    </header>
+    <section>
+    <article>
+    	<div class="About">
+        	<div class="des">
+            	<h1>SoBand Time</h1>
+                <div class="intro">Soband are an English-Irish pop boy band based in London, composed of Niall Horan, Liam Payne, Harry Styles, and Louis Tomlinson; former member Zayn Malik departed from the group in 2015. The group signed with Simon Cowell's record label Syco Records after forming and finishing third in the seventh series of the British televised singing competition The X Factor in 2010. Propelled to international success by social media, One Direction's five albums, Up All Night (2011), Take Me Home (2012), Midnight Memories (2013), Four (2014), and Made in the A.M. (2015), topped charts in most major markets, and generated hit singles including "What Makes You Beautiful", "Live While We're Young", "Best Song Ever", "Story of My Life" and "Drag Me Down".</div>
+            </div>
+        </div>
+    </article>
+    <article class="galary">
+    	<ul class="photo-galary">
+        <h2 id="our-time">OUR'S GALARY</h2>
+        	<li class="pt1"><img src="img/tm1.jpg"></li>
+        	<li class="pt2"><img src="img/tm2.jpg"></li>
+        	<li class="pt3"><img src="img/tm3.jpg"></li>
+        	<li class="pt5"><img src="img/tm5.jpg"></li>
+        	<li class="pt6"><img src="img/tm6.jpg"></li>
+        	<li class="pt7"><img src="img/tm7.jpg"></li>
+        	<li class="pt8"><img src="img/tm8.jpg"></li>
+            
+        </ul>
+    </article>
+		  <article class="timeshow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4"><div class="ts"><h2>Night On LonDon</h2> SEP 17, 06:00PM</div><button class="ticket" value="Ticket">Ticket</button><img src="img/The+Vaults,+Beauty+and+the+Feast,+London,+Show,+Food,+Food+blogger,+London+blogger,+foodporn,+food+porn,.jpg" width="200px" height="300px"></div>
+                            <div class="col-md-4"><div class="ts"><h2>Paris With Music</h2> OCT 22, 08:30PM</div><button class="ticket" value="Ticket">Ticket</button><img src="img/320x320.jpg" width="200px" height="300px"></div>
+                            <div class="col-md-4"><div class="ts"><h2>Viet's People</h2> NOV 05, 10:00PM</div><button class="ticket" value="Ticket">Ticket</button><img src="img/44521418_714852705562483_9049224566526458670_n.jpg" width="200px" height="300px"></div>                
+                        </div>
+                    </div>
+                </article>
+          <article>
+         		<div class="bg-fixed"><h2 id="wel-1">LET'S SEE OUR's PRODUCTS!</h2>
+</div> 
+          </article>     
+     	 <article class="prd">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-4">
+                    	<div class="prd-item"><div id="opa-1"><img src="img/papers.co-ba17-digital-abstract-road-blue-illustration-art-green-25-wallpaper.jpg"><div class="wel-2">Rock's on Soul </div></div></div>
+                    	<div class="prd-item"><div id="opa-2"><img src="img/papers.co-be24-girl-face-anime-art-illustration-flare-25-wallpaper.jpg"><div class="wel-2">Ye Ye</div></div></div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="prd-item"><div id="opa-3"><img src="img/papers.co-bh01-queen-face-singer-artist-music-drawing-illustration-art-25-wallpaper.jpg"><div class="wel-2">Man on the wide</div></div></div>
+                        <div class="prd-item"><div id="opa-4"><img src="img/papers.co-nb95-flower-rainbow-color-dark-flare-25-wallpaper.jpg"><div class="wel-2">Flower's Red</div></div></div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="prd-item"><div id="opa-5"><img src="img/papers.co-oc71-sea-wave-bw-nature-25-wallpaper.jpg"><div class="wel-2">Death's Sea</div></div></div>
+                        <div class="prd-item"><div id="opa-6"><img src="img/papers.co-ms42-farmer-food-grapes-fruit-nature-bokeh-flare-25-wallpaper.jpg"><div class="wel-2">Take all the food</div></div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+          <article class="new-song">
+          <div class="row-s">
+                  <div class="new-s">
+                    <p id="next-song">THE NEXT NEW SONG</p><p id="name-song">NOBODY LOVE ME- ALEX BARON</p><a href="#"><div id="buy-now">BUY TICKET >></div></a>
+                    </div>
+                    <div id="video"><iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+                </iframe></div>
+             </div>
+         </article>
+           <article>
+         	<div class="blog">
+            	<div class="container">	
+                    	<div class="Andrew">
+                        	<div class="row">
+                       	 		<div class="col-md-6"><p class="an-drew">AN-DREW !</br> New Single “Por Favor” feat. Fifth Harmony Out Now!
+Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's centre is the modern Federation Square development, with plazas, bars, and restaurants by the Yarra River.</p></div>
+                       	 		<div class="col-md-6"><img src="img/18.jpg" width="100%" height="400px"><div class="board-name">AN-DREW</br><p class="major">Lead vocals,guitars</p></div></div>
+                            </div>
+                        </div>
+                        <div class="Trieusmith">
+                        	<div class="row">
+                            	<div class="col-md-6"><img src="img/11.jpg" width="100%" height="400px"><div class="board-name">TRIEU-SMITH</br><p class="major">Drums, keyboards</p></div></div>
+                       	 		<div class="col-md-6"><p class="an-drew">TRIEU-SMITH !</br> Watch The Official Video for “Options” ft. Stephen Marley
+Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's centre is the modern Federation Square development, with plazas, bars, and restaurants by the Yarra River.</p></div>
+                       	 		
+                            </div>
+                        </div>
+                    	<div class="Ninhjohny">
+                        	<div class="row">
+                       	 		<div class="col-md-6"><p class="an-drew">NINH-JOHNY !</br> Just it's a fucking pussy guy!.</p></div>
+                       	 		<div class="col-md-6"><img src="img/10.jpg" width="100%" height="400px"><div class="board-name">NINH-JOHNY</br><p class="major">Lead guitar, bass guitar</p></div></div>
+                            </div>
+                        </div>      
+                </div>
+            </div>
+         </article>
+    </section>
+    <footer>
+    	<div class="footer-wel">STAY IN TOUCHE<div class="footer-name"><p id="footer-stay">STAY IN TOUCHE</p></div></div>
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-4"><p class="footer-end">BOOKING
+BENAISSA GHRIB</p>
+T+(513)352-3209
+</div>
+            	<div class="col-md-4"><p class="footer-end">PRESS
+ZAKARIA KALAL</p>
+T+(513)352-3209
+</div>
+            	<div class="col-md-4"><p class="footer-end">INFO
+YOUSSEF AIT PRESS</p>T+(513)352-3209
+</div>                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

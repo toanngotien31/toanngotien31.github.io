@@ -556,6 +556,9 @@ p#footer-stay{
 }
 }
 @media only screen and (min-width: 580px) and (max-width:	770px) {
+	.close{
+	display:none;	
+	}
 .pt1,.pt2,.pt3,.pt4,.pt5,.pt6,.pt7,.pt8{
 	width:40%;
 	height:45%;

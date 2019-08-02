@@ -725,6 +725,9 @@ nav.top-bar{
 }
 
 @media only screen and (max-width: 590px) {
+	.close {
+    display: none;
+}
 	.footer-name{
 	display:none;	
 	}
